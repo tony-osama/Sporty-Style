@@ -8,7 +8,7 @@ header {
     .navbar-brand {
       .logo {
         img {
-          width: 100%;
+          //   width: 100%;
           max-height: 50px;
           animation: Glitch 1.5s infinite linear;
           will-change: transform, opacity, filter;
@@ -51,6 +51,7 @@ header {
   color: $tex-bg;
   position: relative;
   z-index: 1;
+  text-transform: capitalize;
 }
 header::after {
   content: "";
