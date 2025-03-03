@@ -1,5 +1,5 @@
 @import url("./all.css"); /** /font Awesome/*/
-@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"); /** /wow.js/*/
+@import url("./animate.css"); /** /wow.js/*/
 @import url("./bootstrap.min.css"); /** /bootstrap/*/
 @import url("../scss/main.css"); /** /my scss style/*/
 /** /my CDN/*/

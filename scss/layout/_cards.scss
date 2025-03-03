@@ -1,0 +1,57 @@
+$h: #007bff;
+$sh: #0000009d;
+$price: #ff3b30;
+$tran: all 0.5s;
+.card {
+  .card-image {
+    .card-img-top {
+      transform: scale(1.1);
+      position: relative;
+      transition: $tran;
+    }
+    overflow: hidden;
+    position: relative;
+  }
+  .card-image::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: $sh;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: $tran;
+  }
+  .card-title {
+    color: $h;
+  }
+  .card-price {
+    text-align: center;
+    font-size: 30px;
+    color: $price;
+  }
+  text-align: center;
+  box-shadow: -3px 5px 10px $sh;
+}
+.card:hover {
+  .card-image {
+    .card-img-top {
+      transform: scale(1);
+      position: relative;
+    }
+    overflow: hidden;
+    position: relative;
+  }
+  .card-image::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: $sh;
+    position: absolute;
+    inset: 0;
+    opacity: 1;
+    transition: $tran;
+  }
+}

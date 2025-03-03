@@ -8,18 +8,6 @@ $h: #007bff;
 $price: #ff3b30;
 
 .Offers {
-  .card {
-    .card-title {
-      color: $h;
-    }
-    .card-price {
-      text-align: center;
-      font-size: 30px;
-      color: $price;
-    }
-    text-align: center;
-    box-shadow: -3px 5px 10px $sh;
-  }
   background-color: $bg;
   font-family: roboto;
 }
