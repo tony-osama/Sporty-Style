@@ -1,5 +1,5 @@
 header {
-  background-image: url(../../images/bg/header.jpg);
+  background-image: url(../../images/header2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -208,6 +208,15 @@ header::after {
     height: 0;
   }
 }
+@font-face {
+  font-family: roboto;
+  src: url(../../fonts/Roboto-VariableFont_wdthwght.ttf);
+}
+.product {
+  background-color: #ffcc00;
+  font-family: roboto;
+}
+
 img {
   width: 100%;
 }/*# sourceMappingURL=main.css.map */
