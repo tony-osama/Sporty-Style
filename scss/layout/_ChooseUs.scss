@@ -1,0 +1,54 @@
+$bg2: #f8f9fa;
+$ico: #dc3545;
+$ico2: #007bff;
+$title: #343a40;
+$card2: #121212;
+$tran: all 0.5s ease-in-out;
+
+.ChooseUs {
+  .card {
+    .icon {
+      color: $ico;
+      transition: $tran;
+    }
+    .card-title {
+      color: $title;
+      transition: $tran;
+    }
+
+    &::after {
+      content: "";
+      background-color: $card2;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 30vh;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      z-index: -1;
+      transition: $tran;
+    }
+
+    &:hover {
+      .icon {
+        color: $ico2;
+      }
+      .card-title {
+        color: $bg2;
+      }
+      &::after {
+        opacity: 1;
+        top: 0;
+        z-index: -1;
+      }
+      z-index: 1;
+      transform: scale(1.05);
+    }
+    position: relative;
+    height: 40vh;
+    overflow: hidden;
+    z-index: 0;
+  }
+  background-color: $bg2;
+}
