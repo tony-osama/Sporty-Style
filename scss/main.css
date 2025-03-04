@@ -203,6 +203,11 @@ header::after {
   z-index: -1;
 }
 
+@media screen and (max-width: 768) {
+  .ChooseUs .card {
+    height: 0;
+  }
+}
 img {
   width: 100%;
 }/*# sourceMappingURL=main.css.map */
